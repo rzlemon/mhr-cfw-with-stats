@@ -6,7 +6,7 @@
 
 ## Disclaimer
 
-MasterHttpRelayVPN is provided for educational, testing, and research purposes only.
+`mhr-cfw` is provided for educational, testing, and research purposes only.
 
 - **Provided without warranty:** This software is provided "AS IS", without express or implied warranty, including merchantability, fitness for a particular purpose, and non-infringement.
 - **Limitation of liability:** The developers and contributors are not responsible for any direct, indirect, incidental, consequential, or other damages resulting from the use of this project or the inability to use it.
