@@ -41,6 +41,11 @@ if ! "$VPY" -m pip install --disable-pip-version-check -q -r requirements.txt; t
     "$VPY" -m pip install --disable-pip-version-check -q -r requirements.txt
 fi
 
+if [ ! -f "config.json" ]; then
+    echo "[*] No config.json found — launching setup wizard ..."
+    "$VPY" setup.py
+fi
+
 echo
 echo "[*] Starting mhr-cfw ..."
 echo
