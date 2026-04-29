@@ -3,6 +3,7 @@ config.json
 .env
 
 # CA certificates (generated at runtime, contain private keys)
+ca/
 cert/
 
 # Python
@@ -23,6 +24,7 @@ env/
 # IDE
 .vscode/
 .idea/
+*.code-workspace
 *.swp
 *.swo
 *~
