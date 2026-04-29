@@ -83,117 +83,11 @@ pip install -r requirements.txt
 
 > ⚠️ Remember the password you set in step 3. You'll use the same password in the config file below.
 
-### 4 - Configure the config.json file
-
-1. Copy the example config file:
-   ```bash
-   cp config.example.json config.json
-   ```
-   On Windows, you can also just copy & rename the file manually.
-
-2. Open `config.json` in any text editor and fill in your values:
-   ```json
-	{
-		"mode": "apps_script",
-		"google_ip": "216.239.38.120",
-		"front_domain": "www.google.com",
-		"script_id": "YOUR_APPS_SCRIPT_DEPLOYMENT_ID",
-		"auth_key": "CHANGE_ME_TO_A_STRONG_SECRET",
-		"listen_host": "127.0.0.1",
-		"socks5_enabled": true,
-		"listen_port": 8085,
-		"socks5_port": 1080,
-		"log_level": "INFO",
-		"verify_ssl": true,
-		"lan_sharing": true,
-		"relay_timeout": 25,
-		"tls_connect_timeout": 15,
-		"tcp_connect_timeout": 10,
-		"max_response_body_bytes": 209715200,
-		"parallel_relay": 1,
-		"chunked_download_extensions": [
-			".bin",
-			".zip",
-			".tar",
-			".gz",
-			".bz2",
-			".xz",
-			".7z",
-			".rar",
-			".exe",
-			".msi",
-			".dmg",
-			".deb",
-			".rpm",
-			".apk",
-			".iso",
-			".img",
-			".mp4",
-			".mkv",
-			".avi",
-			".mov",
-			".webm",
-			".mp3",
-			".flac",
-			".wav",
-			".aac",
-			".pdf",
-			".doc",
-			".docx",
-			".ppt",
-			".pptx",
-			".wasm"
-		],
-		"chunked_download_min_size": 5242880,
-		"chunked_download_chunk_size": 524288,
-		"chunked_download_max_parallel": 8,
-		"chunked_download_max_chunks": 256,
-		"block_hosts": [],
-		"bypass_hosts": [
-			"localhost",
-			".local",
-			".lan",
-			".home.arpa"
-		],
-		"direct_google_exclude": [
-			"gemini.google.com",
-			"aistudio.google.com",
-			"notebooklm.google.com",
-			"labs.google.com",
-			"meet.google.com",
-			"accounts.google.com",
-			"ogs.google.com",
-			"mail.google.com",
-			"calendar.google.com",
-			"drive.google.com",
-			"docs.google.com",
-			"chat.google.com",
-			"maps.google.com",
-			"play.google.com",
-			"translate.google.com",
-			"assistant.google.com",
-			"lens.google.com"
-		],
-		"direct_google_allow": [
-			"www.google.com",
-			"safebrowsing.google.com"
-		],
-		"youtube_via_relay": false,
-		"hosts": {}
-	}
-   ```
-   - `script_id` → Paste the Deployment ID from Step 3.
-   - `auth_key` → The **same password** you set in `Code.gs`.
-
 ### 4 - Run
 
-Simply click on `start.bat` file (on windows) or `start.sh` (on linux).
+Click on the `run.bat` file (on windows) or `run.sh` file (on linux) to start the relay.
 
-or if you want to run it manually:
-```bash
-python3 main.py
-```
-
+If you're running for the first time it will prompt a setup wizard where you have to enter the AUTH_KEY and Google Apps Script Deployment ID.
 You should see a message saying the HTTP proxy is running on `127.0.0.1:8085`
 
 You can use [FoxyProxy](https://getfoxyproxy.org/) [Chrome Extension](https://chromewebstore.google.com/detail/foxyproxy/gcknhkkoolaabfmlnjonogaaifnjlfnp?hl=en) or [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) to use this proxy in your browser.
