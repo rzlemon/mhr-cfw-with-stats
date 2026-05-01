@@ -90,10 +90,20 @@ Click on the `run.bat` file (on windows) or `run.sh` file (on linux) to start th
 If you're running for the first time it will prompt a setup wizard where you have to enter the AUTH_KEY and Google Apps Script Deployment ID.
 You should see a message saying the HTTP proxy is running on `127.0.0.1:8085`
 
-You can use [FoxyProxy](https://getfoxyproxy.org/) [Chrome Extension](https://chromewebstore.google.com/detail/foxyproxy/gcknhkkoolaabfmlnjonogaaifnjlfnp?hl=en) or [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) to use this proxy in your browser.
+### 5 - Usage
 
-### 5 - Test your connection
+We recommend using [v2rayN client](https://github.com/2dust/v2rayn) and configuring a socks5 proxy.
+
+You can also use [FoxyProxy](https://getfoxyproxy.org/)'s [Chrome extension](https://chromewebstore.google.com/detail/foxyproxy/gcknhkkoolaabfmlnjonogaaifnjlfnp?hl=en) or [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) to use this proxy in your browser.
+
+### 6 - Test your connection
 
 Open [ipleak.net](https://ipleak.net) in your browser, you should see your ip address set as cloudflare's.
 
 <img width="1454" height="869" alt="image" src="https://github.com/user-attachments/assets/dfd3316d-69b6-4b0e-b564-fdb055dbdafd" />
+
+
+---
+
+## Sources for this project
+- https://github.com/masterking32/MasterHttpRelayVPN
