@@ -32,13 +32,14 @@ python main.py
 ### خروجی آمار:
 
 
+```text
 📊 Google Apps Script Usage:
    ├─ Today   : 1,250 / 20,000
    ├─ Used    : 6.2%
    ├─ Left    : 18,750
    └─ Total   : 1,250
    └─ Reset in: 05:23:17 (at 10:30 Iran time)
-
+```
 ---
 
 ### نکته:
