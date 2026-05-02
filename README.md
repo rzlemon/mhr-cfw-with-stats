@@ -31,6 +31,7 @@ python main.py
 
 ### خروجی آمار:
 
+
 📊 Google Apps Script Usage:
    ├─ Today   : 1,250 / 20,000
    ├─ Used    : 6.2%
